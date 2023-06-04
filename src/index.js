@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductList from './product/ProductList';
+import NotificationList from './notification/NotificationList';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   ReactDOM.render(
     <React.StrictMode>
       <ProductList />
+      <NotificationList />
     </React.StrictMode>,
     document.getElementById('root')
   );
