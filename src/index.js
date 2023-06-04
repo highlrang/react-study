@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductList from './product/ProductList';
 import NotificationList from './notification/NotificationList';
+import Counter from './count/Counter';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
@@ -12,6 +13,7 @@ setInterval(() => {
     <React.StrictMode>
       <ProductList />
       <NotificationList />
+      <Counter />
     </React.StrictMode>,
     document.getElementById('root')
   );
