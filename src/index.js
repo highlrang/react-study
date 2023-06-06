@@ -6,18 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import ProductList from './product/ProductList';
 import NotificationList from './notification/NotificationList';
 import Counter from './count/Counter';
+import Accommodate from './member/Accommodate';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(() => {
-  ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// setInterval(() => {}, 1000);
+root.render(
     <React.StrictMode>
       <ProductList />
       <NotificationList />
       <Counter />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}, 1000);
+      <Accommodate />
+    </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

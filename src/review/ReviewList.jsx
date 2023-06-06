@@ -1,5 +1,6 @@
 import React from "react";
 import Review from "./Review";
+import TextInputWithFocusButton from "./TextInputWithFocusButton";
 
 const reviews = [
     {
@@ -15,12 +16,15 @@ const reviews = [
 function ReviewList(props) {
     return (
         <div>
-        <p>리뷰목록</p>
-        {
-            reviews.map((review) => { 
-                return <Review point={review.point} content={review.content}/>
-            })
-        }
+            <p>리뷰작성</p>
+            <p><TextInputWithFocusButton /></p>
+            
+            <p>리뷰목록</p>
+            {
+                reviews.map((review) => { 
+                    return <Review point={review.point} content={review.content}/>
+                })
+            }
         </div>
     )
 }
