@@ -7,6 +7,7 @@ import ProductList from './product/ProductList';
 import NotificationList from './notification/NotificationList';
 import Counter from './count/Counter';
 import Accommodate from './member/Accommodate';
+import ConfirmButton from './etc/ConfirmButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval(() => {}, 1000);
@@ -16,6 +17,7 @@ root.render(
       <NotificationList />
       <Counter />
       <Accommodate />
+      <ConfirmButton />
     </React.StrictMode>
 );
 
