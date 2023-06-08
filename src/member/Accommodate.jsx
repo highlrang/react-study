@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useCounter from "../count/useCounter"
-
+import LoginControl from "./LoginControl";
 
 const MAX_CAPACITY = 10;
 
@@ -22,6 +22,8 @@ function Accommodate(props) {
 
     return (
         <div style={{ padding: 16 }}>
+            <LoginControl isLoggedIn={false}/>
+
             <p>{`총 ${count}명을 수용했습니다.`}</p>
 
             <button onClick={increaseCount} disabled={isFull}>
